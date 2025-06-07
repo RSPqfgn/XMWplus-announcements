@@ -1,0 +1,36 @@
+// ==UserScript==
+// @name         小码王Plus - 公告
+// @version      1.0.0
+// @description  小码王Plus的公告信息
+// @author       RSPqfgn
+// @match        https://world.xiaomawang.com/*
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_registerMenuCommand
+// @grant        GM_xmlhttpRequest
+// @grant        GM_addStyle
+// ==/UserScript==
+
+/*
+    此JSON文件用于存储小码王Plus扩展的公告信息。
+    每个公告应该有一个唯一的ID、标题、内容、发布日期以及是否为重要公告的标记。
+*/
+
+{
+    "announcements": [
+        {
+            "id": "2025-06-07",
+            "title": "小码王Plus更新至v1.6.2",
+            "content": "本次更新修复了若干bug并提升了稳定性。建议所有用户升级至最新版本以获得更好的体验。",
+            "date": "2025-06-07",
+            "important": true
+        },
+        {
+            "id": "2025-06-01",
+            "title": "新增自动检查更新功能",
+            "content": "小码王Plus现已支持自动检查更新功能，可以在设置中开启此功能以及时获取最新版本信息。",
+            "date": "2025-06-01",
+            "important": false
+        }
+    ]
+}
